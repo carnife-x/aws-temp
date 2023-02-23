@@ -29,6 +29,7 @@ huggingface_model.prepare_container_def("ml.t3.medium")
 
 
 predictor = huggingface_model.deploy(
+    endpoint_name="endpoint-hf-test",
    initial_instance_count=1,
    instance_type="ml.c5d.2xlarge",
 )
